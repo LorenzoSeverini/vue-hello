@@ -8,6 +8,115 @@
 /* CSS */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #c48484;
+    background-color: #2e2626;
+    color: #fff;
 }
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e42424;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.btnGenerateCoffee,
+.btnYes,
+.btnNo {
+    background-color: #000000;
+    color: #d81d1d;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: .0625rem solid #d81d1d;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.btnGenerateCoffee:hover,
+.btnYes:hover,
+.btnNo:hover {
+    background-color: #d81d1d;
+    color: #000000;
+}
+
+.formName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.formName input {
+    padding: 0.5rem 1rem;
+    border: .0625rem solid #a39595;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000000;
+}
+
+.formName input::placeholder {
+    color: #a39595;
+}
+
+.formName input:focus {
+    outline: none;
+    border: .0625rem solid #d81d1d;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#menu li {
+    list-style: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu li a:hover {
+    color: #d81d1d;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+
 
