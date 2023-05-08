@@ -14,6 +14,25 @@
 
     <div id="app">
 
+        <h1>{{title}}</h1>
+
+        <div class="formName">
+            <div v-model="nameUser">What's your name?</div>
+            <input type="text" v-model="nameUser" placeholder="Enter your name">
+        </div>
+        
+        <div class="ask">{{ask}} {{nameUser}}</div>
+
+        <div class="answer">{{answer}}</div>
+        
+        <div class="containerBtn">
+            <button id="yes" class="btnYes" @click="menu">yes</button>
+            <button class="btnNo" @click="reloadPage">no</button>
+        </div>    
+
+        <div id="menu"></div>
+
+    
     </div>
 
 
