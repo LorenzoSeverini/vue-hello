@@ -6,11 +6,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            // <!-- Descrizione:
-            // Stampare a schermo un messaggio all’interno di un h1, utilizzando i data. -->
-            // <!-- Bonus:
-            // Aggiungere alla pagina un’immagine, presa anch’essa da un data. -->
-
+            
             title: 'Coffe House',
 
             nameUser: '',
@@ -26,20 +22,19 @@ createApp({
                 {
                     name: 'Espresso',
                     price: 1.00,
-                    img: 'img/espresso.jpeg',
+                    img: 'img/coffee2.jpeg',
                 },
                 {
                     name: 'Americano',
                     price: 2.00,
-                    
+                    img: 'img/coffee3.jpeg',
                 },
                 {
                     name: 'Latte',
                     price: 2.50,
-                    
+                    img: 'img/coffee4.jpeg',
                 },
-            ]
-
+            ],
 
         }
     },
@@ -51,12 +46,10 @@ createApp({
             this.menuList.forEach((element) => {
                 console.log(element.name, element.price);
                 document.getElementById('menu').innerHTML += `
-                    <ul>
-                        <li>
-                            <a>${element.name} ${element.price}€</a>
-                            <img src="img/${element.img}.jpg" alt="${element.name}">
-                        </li>
-                    </ul>
+                    <div class=coffee>
+                        <a>${element.name} ${element.price}€</a>
+                        <a><img src="${element.img}" alt="${element.name}"></a>
+                    </div>
                 `;
             });
             document.getElementById('yes').disabled = true;
@@ -66,6 +59,7 @@ createApp({
             // reload the page
             location.reload();
         },
+
 
     },
 }).mount('#app')
